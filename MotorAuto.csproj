@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67ADA44C-8EE7-4E36-B4BA-2E503281732E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MotorAuto</RootNamespace>
+    <AssemblyName>MotorAuto</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>E:\MYSQL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoubleBufferedDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="fAddAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddAuto.Designer.cs">
+      <DependentUpon>fAddAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBookPurchaseAndSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBookPurchaseAndSales.Designer.cs">
+      <DependentUpon>fBookPurchaseAndSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fGroupProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGroupProducts.Designer.cs">
+      <DependentUpon>fGroupProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMoveToOtherPointOfSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMoveToOtherPointOfSale.Designer.cs">
+      <DependentUpon>fMoveToOtherPointOfSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNewPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNewPurchase.Designer.cs">
+      <DependentUpon>fNewPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNewSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNewSale.Designer.cs">
+      <DependentUpon>fNewSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPartner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPartner.Designer.cs">
+      <DependentUpon>fPartner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPointOfSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPointOfSale.Designer.cs">
+      <DependentUpon>fPointOfSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPriceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPriceList.Designer.cs">
+      <DependentUpon>fPriceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReportSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReportSales.Designer.cs">
+      <DependentUpon>fReportSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fRequisites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRequisites.Designer.cs">
+      <DependentUpon>fRequisites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStartMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStartMenu.Designer.cs">
+      <DependentUpon>fStartMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStatistic.Designer.cs">
+      <DependentUpon>fStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fWarehouse.Designer.cs">
+      <DependentUpon>fWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fWarehouseCarImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fWarehouseCarImg.Designer.cs">
+      <DependentUpon>fWarehouseCarImg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fWorkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fWorkers.Designer.cs">
+      <DependentUpon>fWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManyIF.cs" />
+    <Compile Include="navigation.cs" />
+    <Compile Include="print.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="workWithDB.cs" />
+    <EmbeddedResource Include="fAddAuto.resx">
+      <DependentUpon>fAddAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBookPurchaseAndSales.resx">
+      <DependentUpon>fBookPurchaseAndSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fGroupProducts.resx">
+      <DependentUpon>fGroupProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMoveToOtherPointOfSale.resx">
+      <DependentUpon>fMoveToOtherPointOfSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNewPurchase.resx">
+      <DependentUpon>fNewPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNewSale.resx">
+      <DependentUpon>fNewSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPartner.resx">
+      <DependentUpon>fPartner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPointOfSale.resx">
+      <DependentUpon>fPointOfSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPriceList.resx">
+      <DependentUpon>fPriceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReportSales.resx">
+      <DependentUpon>fReportSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fRequisites.resx">
+      <DependentUpon>fRequisites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStartMenu.resx">
+      <DependentUpon>fStartMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStatistic.resx">
+      <DependentUpon>fStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fWarehouse.resx">
+      <DependentUpon>fWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fWarehouseCarImg.resx">
+      <DependentUpon>fWarehouseCarImg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fWorkers.resx">
+      <DependentUpon>fWorkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
